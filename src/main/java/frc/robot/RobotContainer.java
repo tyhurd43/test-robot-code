@@ -26,7 +26,8 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the button bindings
     configureButtonBindings();
-  }
+    m_subsystem.setDefaultCommand(m_autoCommand);
+    }
 
   /**
    * Use this method to define your button->command mappings. Buttons can be created by
